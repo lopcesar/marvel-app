@@ -1,0 +1,35 @@
+  <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ character.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+@if(character){
+  <ion-content [fullscreen]="true">
+    <ion-card>
+      <img [src]="character.thumbnail" alt="">
+      <ion-card-header>
+        <ion-card-title>{{ 'INFORMATION' | translate }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label>{{ 'DETAIL.COMICS' | translate }}</ion-label>
+            <p slot="end"><span>{{ character.comics }}</span></p>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{ 'DETAIL.SERIES' | translate}}</ion-label>
+            <p> {{ character.series }}</p>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{ 'DETAIL.STORIES' | translate }}</ion-label>
+            <p> {{ character.stories }}</p>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+}

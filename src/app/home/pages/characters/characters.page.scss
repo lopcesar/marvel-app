@@ -1,0 +1,41 @@
+ion-card {
+  width: 100%;
+
+  img {
+    object-fit: cover;
+  }
+
+  ion-item {
+    --padding-start: 0;
+  }
+
+  ion-thumbnail {
+    --border-radius: 8px;
+  }
+}
+
+ion-card-content {
+  padding: 0 2px;
+  margin: 0 4px;
+}
+
+ion-chip {
+  margin: 2px;
+}
+
+.logo {
+  //width: 100px;
+  height: 45px;
+  margin: 8px;
+}
+
+ion-card-title {
+  --color: #fafafafa;
+  text-align: center !important
+}
+
+ion-item {
+  --border-width: 2px;
+  margin: 2px;
+
+}

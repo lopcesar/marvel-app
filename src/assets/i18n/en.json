@@ -1,0 +1,12 @@
+{
+  "TITLE": "Marvel Challenge",
+  "CHARACTER-LIST": {
+    "SUB-TITLE": "SUPERHEROES LIST"
+  },
+  "INFORMATION": "Other information",
+  "DETAIL": {
+    "COMICS": "Number of Comics available",
+    "SERIES": "Number of series available",
+    "STORIES": "Number of comics available"
+  }
+}

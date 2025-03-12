@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-img 
+    src="assets/images/marvel-logo.png" 
+    alt="Marvel Logo"
+    class="logo"
+  ></ion-img>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>{{ 'CHARACTER-LIST.SUB-TITLE' | translate }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-list>
+                @for(character of characterList; track $index){
+                  <ion-item [button]="true" (click)="openCharacter(character)">
+                    <ion-thumbnail slot="start">
+                      <img [src]="character.thumbnail"/>
+                    </ion-thumbnail>
+                    <ion-label>{{ character.name }}</ion-label>
+                  </ion-item>
+                }
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-row>
+    <app-spinner></app-spinner>
+  </ion-grid>
+  
+</ion-content>

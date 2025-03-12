@@ -1,0 +1,12 @@
+{
+  "TITLE": "Desafío Marvel",
+  "CHARACTER-LIST": {
+    "SUB-TITLE": "LISTADO DE SUPERHEROES"
+  },
+  "INFORMATION": "Otra Información",
+  "DETAIL": {
+    "COMICS": "Cantidad de Comics disponibles",
+    "SERIES": "Cantidad de series disponibles",
+    "STORIES": "Cantida de historietas disponibles"
+  }
+}
